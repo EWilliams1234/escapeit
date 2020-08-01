@@ -10,6 +10,7 @@
     <!-- GOOGLE FONTS -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,800&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP IMPORT -->
     <!-- CSS only -->
@@ -51,7 +52,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="rooms.html">Rooms</a>
             <!-- <a class="nav-item nav-link" href="#">Team</a> -->
@@ -59,7 +60,6 @@
           </div>
         </div>
       </nav>
-
 
     <!-- Hero section -->
 
@@ -101,15 +101,28 @@
     <section id="featured-section">
         <div id="featured-box">
             <div id="featured-box-wrapper">
-                <p id="featured-label">Featured Room</p>
-                <h2>The Labyrinth</h2>
-                <p id="featured-details">60 minutes | Hard</p>
-                <p id="featured-description">Lorem ipsum dolor sit amet ajwpiefap aoefjpaewifj
-                    afeojfaoe af oekfao faoefjaofe iajgep aofjepwojfa oaejf oaewjf aepfijeowfjw
-                </p>
-                <div id="featured-buttons">
-                    <a href="LABYRINTH_LINK.html"><button id="featured-game-btn">Play this game</button></a>
-                    <a href="rooms.html"><button id="featured-browse-rooms-btn">Browse all rooms</button></a>
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <img id = "featured-image" src = "./photos/labryinthlogo.png"/>
+                    </div>
+                    <div class = "col-md-4">
+                        <label id="featured-label">Featured Room</label>
+                        <h2>The Labyrinth</h2>
+                        <p id="featured-details">60 minutes | Hard</p>
+                        <div id="featured-buttons">
+                            <a href="https://labyrinth.escapeit.xyz"><button id="featured-game-btn">Play this game</button></a>
+                            <a href="rooms.html"><button id="featured-browse-rooms-btn">Browse all rooms</button></a>
+                        </div>
+                    </div>
+                    <div class ="col-md-4">
+                        <p id = "description-label"> Description: </p>
+                        <p id="featured-description">
+                            You and your friends were casually strolling along in Greece when you fell into an open sewer gate, 
+                            and get locked into what appears to be Ancient Ruins. You hear a bellow behind you, and you slowly figure 
+                            out you are trapped inside the Minotaur's labyrinth. Can you escape in time, or will you be eaten by the beast 
+                            like the sacrifices of Athens once were? 
+                        </p>
+                    </div>
                 </div>
             </div>
 

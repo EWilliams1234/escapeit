@@ -6,10 +6,12 @@
     <title>Escape It | Virtual Escape Room Games</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="input.scss" rel="stylesheet" type="text/scss" />
+    <link href="rooms.css" rel="stylesheet" type="text/css" />
 
     <!-- GOOGLE FONTS -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,800&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP IMPORT -->
     <!-- CSS only -->
@@ -52,8 +54,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="index.html"> Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="rooms.html">Rooms</a>
             <!-- <a class="nav-item nav-link" href="#">Team</a> -->
             <a class="nav-item nav-link" href="contact.html">Contact</a>
@@ -62,33 +64,73 @@
       </nav>
 
       <h1>Browse our rooms</h1>
-
       <div class="rooms" id="room1">
-          <h2 class="roomName">The Labyrinth</h2>
-          <p class="roomDetails">60 minutes | Hard</p>
-          <p class="roomDescription">ajfepiow aeofja eowjf afijwepof iofa ewoijfawepoi eaiwjf awfea
-              faoweijfwpe wf oejfowe  fwaoej foa fe oejf wo
-          </p>
-          <div class="roomButtonWrapper"><a href="LABYRINTH_LINK.html"><button class="playRoom">Play now</button></a></div>
+          <div class = "row">
+            <div class = "roomImage col-md-4 col-sm-12">
+                <img src = "./photos/labryinthlogo.png"/>
+            </div>
+            <div class = "roomDetails col-md-4 col-sm-12">
+              <h2 class="roomName">The Labyrinth</h2>
+              <p>60 minutes | Hard</p>
+              <div class="roomButtonWrapper"><a href="https://labyrinth.escapeit.xyz"><button class="playRoom">Play now</button></a></div>  
+            
+            </div> 
+            <div class = "roomDescription col-md-4 col-sm-12">
+              <p>
+                You and your friends were casually strolling along in Greece when you fell into an open sewer gate, 
+                and get locked into what appears to be Ancient Ruins. You hear a bellow behind you, and you slowly figure 
+                out you are trapped inside the Minotaur's labyrinth. Can you escape in time, or will you be eaten by the beast 
+                like the sacrifices of Athens once were? 
+            </p>
+            </div>
+
+          </div>
           
       </div>
       <div class="rooms" id="room2">
-        <h2 class="roomName">SherLOCKED</h2>
-        <p class="roomDetails">65 minutes | Hard</p>
-        <p class="roomDescription">ajfepiow aeofja eowjf afijwepof iofa ewoijfawepoi eaiwjf awfea
-            faoweijfwpe wf oejfowe  fwaoej foa fe oejf wo
-        </p>
-        <div class="roomButtonWrapper"><a href="SHERLOCKED_LINK.html"><button class="playRoom">Play now</button></a></div>
-      </div>
-      <div class="rooms" id="room3">
-        <h2 class="roomName">Bank Heist</h2>
-        <p class="roomDetails">65 minutes | Very Hard</p>
-        <p class="roomDescription">ajfepiow aeofja eowjf afijwepof iofa ewoijfawepoi eaiwjf awfea
-            faoweijfwpe wf oejfowe  fwaoej foa fe oejf wo
-        </p>
-        <div class="roomButtonWrapper"><a href="BANKHEIST_LINK.html"><button class="playRoom">Play now</button></a></div>  
-      </div>
+        <div class = "row">
+          <div class = "roomImage col-md-4 col-sm-12">
+              <img src = "./photos/bankheist.png"/>
+          </div>
+          <div class = "roomDetails col-md-4 col-sm-12">
+            <h2 class="roomName">Bank Heist</h2>
+            <p>60 minutes | Hard</p>
+            <div class="roomButtonWrapper"><a href="https://bankheist.escapeit.xyz"><button class="playRoom">Play now</button></a></div>  
+          
+          </div> 
+          <div class = "roomDescription col-md-4 col-sm-12">
+            <p>
+              Congratulations, you have been given a contract that is anything but ordinary. You must rob a bank, but you do not know 
+              who or what you are robbing. Your employer assures you that all the clues are inside of the bank and if you just try hard enough 
+              you will be able to make it to the end and grab whatever is waiting for you. 
+          </p>
+          </div>
 
+        </div>
+        
+    </div>
+    <div class="rooms" id="room3">
+      <div class = "row">
+        <div class = "roomImage col-md-4 col-sm-12">
+            <img src = "./photos/sherlocked.png"/>
+        </div>
+        <div class = "roomDetails col-md-4 col-sm-12">
+          <h2 class="roomName">Sherlocked </h2>
+          <p>60 minutes | Hard</p>
+          <div class="roomButtonWrapper"><a href="https://sherlocked.escapeit.xyz"><button class="playRoom">Play now</button></a></div>  
+        
+        </div> 
+        <div class = "roomDescription col-md-4 col-sm-12">
+          <p>
+            You have been invited by Scotland Yard to assist them in their very first, social distanced murder investigation. It is 
+            crucial that you are able to solve this murder because time is of the essence. You are investigating the death of a prominent 
+            researcher armed along with some notes, his computer, and a list of suspects. Good luck! 
+        </p>
+        </div>
+
+      </div>
+      
+  </div>
       <section id="footer">
         Created by the Escape It Team. 2020.
     </section>
